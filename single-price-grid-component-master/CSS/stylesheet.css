@@ -1,0 +1,141 @@
+* {
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    min-height: 100%;
+    background-color: hsl(204, 43%, 93%);
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin: 3px 0;
+}
+
+h1, h2, h3 {
+    margin: 15px 0px;
+    font-size: 18px;
+}
+
+h1 {
+    color: hsl(179, 62%, 43%);
+    font-size: 24px;
+}
+
+h2 {
+    color: hsl(71, 73%, 54%);
+}
+
+p {
+    margin: 6px 0;
+}
+
+#main {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    height: 500px;
+    top: 20%;
+    width: 660px;
+    box-shadow: 1.5px 1.5px 20px hsl(201, 11%, 66%);
+    border-radius: 10px;
+}
+
+.container {
+    padding: 20px 35px;
+    height: 55%;
+    width: 50%;
+}
+
+.first-top-box {
+    height: 45%;
+    width: 100%;
+    background-color: white;
+    color: hsl(218, 22%, 67%);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.second-left-box {
+    background-color: hsl(179, 62%, 43%);
+    color: white;
+    border-bottom-left-radius: 10px;
+}
+
+strong {
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.second-left-box>div>span {
+    color: hsl(218, 22%, 87%);
+}
+
+.second-left-box>div, .second-left-box>p {
+    margin: 10px 0;
+}
+
+.second-left-box>p {
+    font-size: 16px;
+}
+
+#sign-up {
+    display: block;
+    color: white;
+    background-color: hsl(71, 73%, 54%);
+    text-decoration: none;
+    text-align: center;
+    height: 50px;
+    margin-top: 40px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 1.5px 1.5px 10px hsl(201, 11%, 36%);
+}
+
+.third-right-box {
+    background-color: hsl(179, 62%, 48%);
+    color: white;
+    border-bottom-right-radius: 10px;
+}
+
+/*Footer Styling Section Start*/
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/*Footer Styling End*/
+
+@media only screen and (max-width: 660px) {
+    #main {
+        flex-direction: column;
+        height: auto;
+        width: 90%;
+        margin: 10% auto;
+        top: 0;
+    }
+    .container {
+        width: auto;
+    }
+    .second-left-box {
+        border-bottom-left-radius: 0;
+    }
+    .third-right-box {
+        border-bottom-left-radius: 10px;
+    }
+}
